@@ -27,7 +27,7 @@ const Deposit = () => {
   return (
     <>
       <Head>
-        <title>Deposit| Adeshex Global</title>
+        <title>Deposit| Binfat Computer Technology </title>
       </Head>
       <Box
         component="main"

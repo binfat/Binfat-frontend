@@ -36,7 +36,7 @@ const Products = () => {
   return (
     <>
       <Head>
-        <title>Products | Material Kit</title>
+        <title>Products | Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

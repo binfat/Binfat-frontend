@@ -32,7 +32,7 @@ const EditDeposit = () => {
   return (
     <>
       <Head>
-        <title>Edit Deposit View| Adeshex Global</title>
+        <title>Edit Deposit View|Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

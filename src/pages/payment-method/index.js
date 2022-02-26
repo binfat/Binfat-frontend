@@ -30,7 +30,7 @@ const PaymentMethod = () => {
   return (
     <>
       <Head>
-        <title>Payment Method | Material Kit</title>
+        <title>Payment Method | Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

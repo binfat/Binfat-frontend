@@ -22,7 +22,7 @@ const Account = () => {
   return (
     <>
       <Head>
-        <title>Profile | Adeshex Global</title>
+        <title>Profile | Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

@@ -15,7 +15,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import("src/components/navbar-br
 const TransferListsPage = () => (
   <>
     <Head>
-      <title>Transfer Lists| Material Kit</title>
+      <title>Transfer Lists| Binfat Computer Technology</title>
     </Head>
 
     <Box

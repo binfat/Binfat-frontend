@@ -29,7 +29,7 @@ const Brand = () => {
   return (
     <>
       <Head>
-        <title>Brand | Material Kit</title>
+        <title>Brand | Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

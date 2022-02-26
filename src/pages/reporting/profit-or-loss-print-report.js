@@ -28,7 +28,7 @@ const ProfitOrLossPrintReport = (props) => {
   return (
     <>
       <Head>
-        <title>Reporting| Adeshex Global Limited</title>
+        <title>Reporting|Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"
@@ -42,7 +42,7 @@ const ProfitOrLossPrintReport = (props) => {
             sx={{
               mb: 4,
             }}
-            title={`Profit And Loss Report at ${router.query.branch} Between ${ router.query.from} and ${router.query.to}`}
+            title={`Profit And Loss Report at ${router.query.branch} Between ${router.query.from} and ${router.query.to}`}
           />
           <CollapsibleTable profitOrLossReport={profitOrLossReport} />
         </Container>

@@ -22,7 +22,7 @@ const SalesReport = () => {
   return (
     <>
       <Head>
-        <title>Sales Report| 18A Nigerial Limited</title>
+        <title>Sales Report| Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

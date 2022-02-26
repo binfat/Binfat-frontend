@@ -29,7 +29,7 @@ const Staff = () => {
   return (
     <>
       <Head>
-        <title>Staff | Adeshex Global </title>
+        <title>Staff |Binfat Computer Technology </title>
       </Head>
       <Box
         component="main"

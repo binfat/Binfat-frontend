@@ -37,7 +37,7 @@ const EditExpenses = () => {
   return (
     <>
       <Head>
-        <title>Edit Expenses | Adeshex Global</title>
+        <title>Edit Expenses |Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

@@ -32,7 +32,7 @@ const AddPurchasePage = () => {
   return (
     <>
       <Head>
-        <title>Purchase| Material Kit</title>
+        <title>Purchase| Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

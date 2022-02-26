@@ -32,7 +32,7 @@ const Expenses = () => {
   return (
     <>
       <Head>
-        <title>Expenses | Adeshex Global</title>
+        <title>Expenses | Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

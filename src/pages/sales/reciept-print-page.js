@@ -31,7 +31,7 @@ const ReceiptPrintReport = (props) => {
   return (
     <>
       <Head>
-        <title>Reporting| Adeshex Global Limited</title>
+        <title>Reporting| Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

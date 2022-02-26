@@ -12,7 +12,7 @@ const Auth = () => {
   return (
     <>
       <Head>
-        <title>Login | Adeshex Global</title>
+        <title>Login | Binfat Computer Technology</title>
       </Head>
       <DynamicComponentWithNoSSR />
     </>

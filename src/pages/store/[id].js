@@ -32,7 +32,7 @@ const EditBranch = () => {
   return (
     <>
       <Head>
-        <title>Store | Adeshex Global</title>
+        <title>Store | Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

@@ -29,7 +29,7 @@ const DepositListsPage = () => {
   return (
     <>
       <Head>
-        <title>Manage Deposit | Material Kit</title>
+        <title>Manage Deposit |Binfat Computer Technology</title>
       </Head>
 
       <Box

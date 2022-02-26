@@ -13,7 +13,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import("src/components/navbar-br
 const AddSupplierLedgerPage = () => (
   <>
     <Head>
-      <title>Add Supplier Ledger| Material Kit</title>
+      <title>Add Supplier Ledger| Binfat Computer Technology</title>
     </Head>
     <Box
       component="main"

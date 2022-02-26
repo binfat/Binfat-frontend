@@ -35,7 +35,7 @@ const EditPurchasePage = () => {
   return (
     <>
       <Head>
-        <title>Edit Purchase| Material Kit</title>
+        <title>Edit Purchase| Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

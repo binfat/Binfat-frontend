@@ -32,7 +32,7 @@ const ManageSupplierLists = () => {
   return (
     <>
       <Head>
-        <title>Manage Expenses| Material Kit</title>
+        <title>Manage Expenses|Binfat Computer Technology</title>
       </Head>
 
       <Box

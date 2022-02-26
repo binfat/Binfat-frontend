@@ -28,7 +28,7 @@ const SalesListPage = () => {
   return (
     <>
       <Head>
-        <title>Sales Lists| Adeshex Global</title>
+        <title>Sales Lists| Binfat Computer Technology</title>
       </Head>
 
       <Box

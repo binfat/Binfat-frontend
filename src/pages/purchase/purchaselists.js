@@ -27,7 +27,7 @@ const PurcahseListsPage = () => {
   return (
     <>
       <Head>
-        <title>Purchase Lists| Material Kit</title>
+        <title>Purchase Lists| Binfat Computer Technology</title>
       </Head>
 
       <Box

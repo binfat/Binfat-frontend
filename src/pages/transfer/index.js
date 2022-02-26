@@ -12,7 +12,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import("src/components/navbar-br
 const TransferOutlets = () => (
   <>
     <Head>
-      <title>Add Transfer Outlet| Material Kit</title>
+      <title>Add Transfer Outlet| Binfat Computer Technology</title>
     </Head>
     <Box
       component="main"

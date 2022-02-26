@@ -37,7 +37,7 @@ const Dashboard = () => {
   return (
     <>
       <Head>
-        <title>Dashboard | Adeshex Global </title>
+        <title>Dashboard |Binfat Computer Technology </title>
       </Head>
       <Box
         component="main"

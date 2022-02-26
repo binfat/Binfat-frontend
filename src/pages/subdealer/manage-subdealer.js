@@ -17,7 +17,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import("src/components/navbar-br
 const ManageSubdealer = () => (
   <>
     <Head>
-      <title>T Subdealer Lists| 1948 App</title>
+      <title>T Subdealer Lists| Binfat Computer Technology</title>
     </Head>
 
     <Box

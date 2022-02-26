@@ -37,7 +37,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {"Copyright © "}
       <Link color="inherit" href="#">
-        Dayon Consulting Enterprise
+        Cheapest Order Concepts Technology
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -141,25 +141,25 @@ export default function Login() {
       >
         <div className={classes.wrapper}>
           <Typography variant="h4" className={classes.title}>
-            Adeshex Global
+            Binfat Computer Technology
           </Typography>
 
           <div className={classes.details}>
             <HomeIcon className={classes.icon} />
             <Typography variant="subtitle1" className={classes.text}>
-              Shop 1 and 2 oranmiayan tower lagere ile ife
+              Union Bank Ikirun Osun State.
             </Typography>
           </div>
           <div className={classes.details}>
             <CallIcon className={classes.icon} />
             <Typography variant="subtitle1" className={classes.text}>
-              +2348107895502
+              +234-70-604-67430
             </Typography>
           </div>
           <div className={classes.details}>
             <EmailIcon className={classes.icon} />
             <Typography variant="subtitle1" className={classes.text}>
-              Adeshexglobalconcept@gmail.com
+              binfatstocksoftware@gmail.com
             </Typography>
           </div>
         </div>

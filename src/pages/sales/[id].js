@@ -31,7 +31,7 @@ const EditSales = () => {
   return (
     <>
       <Head>
-        <title>Sales| Adeshex Global</title>
+        <title>Sales| Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

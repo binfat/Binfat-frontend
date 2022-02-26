@@ -12,7 +12,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import("src/components/navbar-br
 const DepositReport = () => (
   <>
     <Head>
-      <title>Reporting| 18A Nigerial Limited</title>
+      <title>Reporting| Binfat Computer Technology</title>
     </Head>
     <Box
       component="main"

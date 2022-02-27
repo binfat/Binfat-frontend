@@ -215,10 +215,10 @@ export const DashboardSidebar = (props) => {
             >
               <div>
                 <Typography color="inherit" variant="h6">
-                  Adeshex Global Concept.
+                  Binfat Computer Technology .
                 </Typography>
                 <Typography color="neutral.400" variant="body2">
-                  Daycon Consult : Available
+                  Binfat : Available
                 </Typography>
               </div>
               <SelectorIcon

@@ -22,6 +22,7 @@ const OutOfStockPrintReport = (props) => {
   const { outOfStocksReport } = state;
   const printRef = useRef();
   const { router } = props;
+  
 
   return (
     <>

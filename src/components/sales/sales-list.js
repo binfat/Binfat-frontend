@@ -96,7 +96,7 @@ const SalesList = ({ salesList }) => {
     setready(true);
   }, []);
 
-  console.log(salesList);
+  
 
   const mySales = salesList.map((sale, i) => {
     const strDate = new Date(sale?.created_at);

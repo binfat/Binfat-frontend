@@ -11,6 +11,12 @@ import Paper from "@mui/material/Paper";
 
 
 export default function CollapsibleTable({ profitOrLossReport }) {
+  function convert(date) {
+    var date = new Date(date),
+      mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+      day = ("0" + date.getDate()).slice(-2);
+    return [date.getFullYear(), mnth, day].join("-");
+  }
   return (
     <TableContainer component={Paper}>
     <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -36,7 +42,7 @@ export default function CollapsibleTable({ profitOrLossReport }) {
             <TableCell component="th" scope="row">
               {row.invoice_number}
             </TableCell>
-            <TableCell align="right">{row.created_at}</TableCell>
+            <TableCell align="right">{convert(new Date(row?.created_at))}</TableCell>
             <TableCell align="right">{row.product}</TableCell>
             <TableCell align="right">{row.cost_price}</TableCell>
             <TableCell align="right">{`₦${row.selling_price}`}</TableCell>

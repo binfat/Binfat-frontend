@@ -106,6 +106,13 @@ function Row(props) {
 }
 
 export default function CollapsibleTable({ salesReport }) {
+
+  function convert(date) {
+    var date = new Date(date),
+      mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+      day = ("0" + date.getDate()).slice(-2);
+    return [date.getFullYear(), mnth, day].join("-");
+  }
   return (
     <TableContainer component={Paper}>
     <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -127,13 +134,40 @@ export default function CollapsibleTable({ salesReport }) {
             <TableCell component="th" scope="row">
               {row.invoice_number}
             </TableCell>
-            <TableCell align="right">{row.created_at}</TableCell>
+            <TableCell align="right">{convert(new Date(row?.created_at))}</TableCell>
             <TableCell align="right">{row.product}</TableCell>
             <TableCell align="right">{row.cost_price}</TableCell>
             <TableCell align="right">{`₦${row.selling_price}`}</TableCell>
             <TableCell align="right">{row.quantity * row.selling_price}</TableCell>             
           </TableRow>
+
         ))}
+        <TableRow>
+                    <TableCell></TableCell>
+                    <TableCell></TableCell>
+                    {/* <TableCell></TableCell> */}
+                    <TableCell>
+                      <Typography variant="h6">Total </Typography>
+                    </TableCell>
+                    <TableCell>
+                      <Typography variant="h6">{`₦${salesReport?.reduce(
+                        (a, c) => a + c.cost_price,
+                        0
+                      )}`}</Typography>
+                    </TableCell>
+                    <TableCell>
+                      <Typography variant="h6">{`₦${salesReport?.reduce(
+                        (a, c) => a + Number(c.selling_price),
+                        0
+                      )}`}</Typography>
+                    </TableCell>
+                    <TableCell>
+                      <Typography variant="h6">{`₦${salesReport?.reduce(
+                        (a, c) => a + Number(c.selling_price * c.quantity),
+                        0
+                      )}`}</Typography>
+                    </TableCell>
+                  </TableRow>
       </TableBody>
     </Table>
   </TableContainer>

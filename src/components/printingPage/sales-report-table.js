@@ -72,7 +72,8 @@ function Row(props) {
                   <TableRow>
                     <TableCell></TableCell>
                     <TableCell></TableCell>
-                    {/* <TableCell></TableCell> */}
+                    <TableCell></TableCell>
+                    <TableCell></TableCell>
                     <TableCell>
                       <Typography variant="h6">Total </Typography>
                     </TableCell>

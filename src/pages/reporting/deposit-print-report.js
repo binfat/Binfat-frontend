@@ -22,8 +22,7 @@ const DepositPrintReport = (props) => {
   const { depositReport } = state;
   const printRef = useRef();
   const { router } = props;
-  const startDate = new Date(router?.query?.from)
-  const endDate = new Date(router?.query?.to)
+
 
 function convert(date) {
   var date = new Date(date),
@@ -46,7 +45,7 @@ function convert(date) {
       >
         <Container ref={printRef} maxWidth={true}>
           <PrintingHeader
-            title={`Deposit Report at ${router.query.branch} Between ${convert(startDate)} and ${convert(endDate)}`}
+            title={`Deposit Report at ${router.query.branch} Between ${convert(new Date(router?.query?.from))} and ${convert(new Date(router?.query?.to))}`}
           />
           <BasicTable depositReport={depositReport} />
         </Container>

@@ -5,7 +5,7 @@ const PrintingHeader = ({ title }) => {
   return (
     <>
       <Typography variant="h1" sx={{ textAlign: "center", mb: 3 }}>
-        Adeshex Global
+      Binfat Computer Technology 
       </Typography>
       <Typography variant="h5" sx={{ textAlign: "center" }}>
         {title}

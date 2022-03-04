@@ -26,7 +26,7 @@ const SalesPrintReport = (props) => {
   return (
     <>
       <Head>
-        <title>Reporting|Binfat Computer Technology</title>
+        <title>Reporting | Binfat Computer Technology</title>
       </Head>
       <Box
         component="main"

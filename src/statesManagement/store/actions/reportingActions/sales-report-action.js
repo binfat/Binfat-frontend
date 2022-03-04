@@ -14,7 +14,7 @@ export const getSalesReport = async ({ dispatch, enqueueSnackbar, from, to, Rout
       method: "GET",
       path: `/view-sales-report?from=${from}&to=${to}&branch=${branch}`,
     });
-    console.log(data.data);
+    
     dispatch({
       type: GET_SALES_REPORT_SUCCESS,
       payload: data.data,

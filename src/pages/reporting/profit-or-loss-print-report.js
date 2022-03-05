@@ -24,7 +24,8 @@ const ProfitOrLossPrintReport = (props) => {
   console.log(profitOrLossReport);
   const printRef = useRef();
   const { router } = props;
-
+  const startDate = new Date(router?.query?.from.replace(/["]+/g, ''))
+  const endDate = new Date (router?.query?.to.replace(/["]+/g, ''))
 
 function convert(date) {
   var date = new Date(date),
@@ -50,7 +51,7 @@ function convert(date) {
             sx={{
               mb: 4,
             }}
-            title={`Profit And Loss Report at ${router.query.branch} Between ${convert( new Date(router?.query?.from))} and ${convert(new Date(router?.query?.to))}`}
+            title={`Profit And Loss Report at ${router.query.branch} Between ${convert(startDate)} and ${convert(endDate)}`}
           />
           <CollapsibleTable profitOrLossReport={profitOrLossReport} />
         </Container>

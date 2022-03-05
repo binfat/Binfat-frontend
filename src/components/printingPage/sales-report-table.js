@@ -47,7 +47,7 @@ function Row(props) {
                     <TableCell>Quantity</TableCell>
                     <TableCell>Cost Price</TableCell>
                     <TableCell>Selling Price</TableCell>
-                    <TableCell>Total</TableCell>
+                    <TableCell>Totals</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -74,8 +74,10 @@ function Row(props) {
                     <TableCell></TableCell>
                     <TableCell></TableCell>
                     <TableCell></TableCell>
+                    <TableCell></TableCell>
+                    <TableCell></TableCell>
                     <TableCell>
-                      <Typography variant="h6">Total </Typography>
+                      <Typography variant="h6">Totals </Typography>
                     </TableCell>
                     <TableCell>
                       <Typography variant="h6">{`₦${row?.items?.reduce(
@@ -146,23 +148,24 @@ export default function CollapsibleTable({ salesReport }) {
         <TableRow>
                     <TableCell></TableCell>
                     <TableCell></TableCell>
+                    <TableCell></TableCell>
                     {/* <TableCell></TableCell> */}
-                    <TableCell>
+                    <TableCell align="right">
                       <Typography variant="h6">Total </Typography>
                     </TableCell>
-                    <TableCell>
+                    <TableCell align="right">
                       <Typography variant="h6">{`₦${salesReport?.reduce(
                         (a, c) => a + c.cost_price,
                         0
                       )}`}</Typography>
                     </TableCell>
-                    <TableCell>
+                    <TableCell align="right">
                       <Typography variant="h6">{`₦${salesReport?.reduce(
                         (a, c) => a + Number(c.selling_price),
                         0
                       )}`}</Typography>
                     </TableCell>
-                    <TableCell>
+                    <TableCell align="right">
                       <Typography variant="h6">{`₦${salesReport?.reduce(
                         (a, c) => a + Number(c.selling_price * c.quantity),
                         0

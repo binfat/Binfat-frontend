@@ -22,7 +22,8 @@ const SalesPrintReport = (props) => {
   const { salesReport } = state;
   const printRef = useRef();
   const { router } = props;
-
+const startDate = new Date(router?.query?.from.replace(/["]+/g, ''))
+const endDate = new Date (router?.query?.to.replace(/["]+/g, ''))
 
 function convert(date) {
   var date = new Date(date),
@@ -44,7 +45,7 @@ function convert(date) {
       >
         <Container ref={printRef} maxWidth={true}>
           <PrintingHeader
-            title={`Sales Report at ${router.query.branch} Between ${convert(new Date(router?.query?.from))} and ${convert(router?.query?.to)}`}
+            title={`Sales Report at ${router.query.branch} Between ${convert(startDate)} and ${convert(endDate)}`}
           />
           <CollapsibleTable salesReport={salesReport} />
         </Container>

@@ -6,7 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-
+import Typography from "@mui/material/Typography";
 
 
 
@@ -45,6 +45,34 @@ export default function BasicTable({ depositReport }) {
               <TableCell align="right">{`₦${row.amount_to_balance}`}</TableCell>
             </TableRow>
           ))}
+          <TableRow>
+                    <TableCell></TableCell>
+                    <TableCell></TableCell>
+                    <TableCell></TableCell>
+                    <TableCell></TableCell>
+                    {/* <TableCell></TableCell> */}
+                    <TableCell align="right">
+                      <Typography variant="h6">Total </Typography>
+                    </TableCell>
+                    <TableCell align="right">
+                      <Typography variant="h6">{`₦${depositReport?.reduce(
+                        (a, c) => a + Number(c.amount_deposited),
+                        0
+                      )}`}</Typography>
+                    </TableCell>
+                    <TableCell align="right">
+                      <Typography variant="h6">{`₦${depositReport?.reduce(
+                        (a, c) => a + Number(c.amount_to_balance),
+                        0
+                      )}`}</Typography>
+                    </TableCell>
+                    {/* <TableCell align="right">
+                      <Typography variant="h6">{`₦${depositReport?.reduce(
+                        (a, c) => a + Number(c.selling_price * c.quantity),
+                        0
+                      )}`}</Typography>
+                    </TableCell> */}
+                  </TableRow>
         </TableBody>
       </Table>
     </TableContainer>

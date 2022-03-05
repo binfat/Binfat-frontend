@@ -86,7 +86,7 @@ export const EditProductForm = (props) => {
       Router: Router,
       enqueueSnackbar: enqueueSnackbar,
     });
-    console.log(product);
+  
   };
   return (
     <Box {...props}>

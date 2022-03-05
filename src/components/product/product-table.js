@@ -73,6 +73,10 @@ const ProductTable = ({ products, editable }) => {
       label: "Product Price",
     },
     {
+      name: "selling_prce",
+      label: "Selling Price",
+    },
+    {
       name: "supplier",
       label: "Supplier",
     },
@@ -143,6 +147,11 @@ const ProductTable = ({ products, editable }) => {
       label: "Product Price",
     },
     {
+      name: "selling_prce",
+      label: "Selling Price",
+    },
+
+    {
       name: "supplier",
       label: "Supplier",
     },
@@ -170,6 +179,7 @@ const ProductTable = ({ products, editable }) => {
       branch: `${pro.branch}`,
       brand: `${pro.product_brand}`,
       price: `${pro.product_price}`,
+      selling_price: `${pro.selling_price}`,
       supplier: `${pro.supplier}`,
       current_qty: `${pro.current_product_quantity}`,
       date: convert(strDate),

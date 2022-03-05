@@ -29,6 +29,7 @@ export const ProductListToolbar = (props) => {
   const INITIAL_FORM_VALUES = {
     name: "",
     price: "",
+    selling_price:"",
     brand: "",
     barcode: "",
     supplier: "",
@@ -38,11 +39,16 @@ export const ProductListToolbar = (props) => {
     name: yup.string().required("Please provide product name"),
     brand: yup.string().required("Please provide product brand"),
     barcode: yup.string(),
+    selling_price: yup
+    .number()
+    .integer()
+    .typeError("Price must be a number")
+    .required("Please provide product selling price"),
     price: yup
       .number()
       .integer()
       .typeError("Price must be a number")
-      .required("Please provide product price"),
+      .required("Please provide product cost price"),
     supplier: yup.string().required("Please provide product supplier"),
   });
 
@@ -51,12 +57,13 @@ export const ProductListToolbar = (props) => {
   const { loading } = state;
   const { enqueueSnackbar } = useSnackbar();
   const Router = useRouter();
-  console.log(suppliers);
+
 
   const handleUpdate = (values) => {
     const product = {
       product_name: values.name,
       product_price: values.price,
+      selling_price: values.selling_price,
       product_brand: values.brand,
       product_barcode: values.barcode,
       supplier: values.supplier,
@@ -69,6 +76,7 @@ export const ProductListToolbar = (props) => {
     const product = {
       product_name: values.name,
       product_price: values.price,
+      selling_price:values.selling_price,
       product_brand: values.brand,
       product_barcode: values.barcode,
       supplier: values.supplier,
@@ -139,6 +147,19 @@ export const ProductListToolbar = (props) => {
                       <CustomTextField
                         name="barcode"
                         label="Product Barcode"
+                        InputProps={{
+                          endAdornment: (
+                            <InputAdornment position="end">
+                              <ListIcon />
+                            </InputAdornment>
+                          ),
+                        }}
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <CustomTextField
+                        name="selling_price"
+                        label="Selling Price"
                         InputProps={{
                           endAdornment: (
                             <InputAdornment position="end">

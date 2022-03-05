@@ -18,8 +18,8 @@ export default function ProductPriceListTable({ productPrice }) {
             <TableCell align="right">Brand</TableCell>
             <TableCell align="right">Supplier</TableCell>
             <TableCell align="right">Price</TableCell>
-            {/* <TableCell align="right">Previous Quantity</TableCell> */}
-            <TableCell align="right">Current Quantity</TableCell>
+            <TableCell align="right">Selling Price</TableCell>
+            {/* <TableCell align="right">Current Quantity</TableCell> */}
           </TableRow>
         </TableHead>
         <TableBody>
@@ -32,8 +32,9 @@ export default function ProductPriceListTable({ productPrice }) {
               <TableCell align="right">{row.product_brand}</TableCell>
               <TableCell align="right">{row.supplier}</TableCell>
               <TableCell align="right">{`₦${row.product_price}`}</TableCell>
+              <TableCell align="right">{`₦${row.selling_price}`}</TableCell>
               {/* <TableCell align="right">{row.previous_product_quantity}</TableCell> */}
-              <TableCell align="right">{row.current_product_quantity}</TableCell>
+              {/* <TableCell align="right">{row.current_product_quantity}</TableCell> */}
             </TableRow>
           ))}
         </TableBody>

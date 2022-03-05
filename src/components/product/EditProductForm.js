@@ -40,6 +40,10 @@ export const EditProductForm = (props) => {
       oneProduct.length > 0 && typeof oneProduct[0] != "undefined"
         ? oneProduct[0].product_price
         : "",
+        selling_price:
+        oneProduct.length > 0 && typeof oneProduct[0] != "undefined"
+          ? oneProduct[0].selling_price
+          : "",
     product_brand:
       oneProduct.length > 0 && typeof oneProduct[0] != "undefined"
         ? oneProduct[0].product_brand
@@ -62,6 +66,7 @@ export const EditProductForm = (props) => {
     product_brand: yup.string(),
     supplier: yup.string(),
     price: yup.number().integer().typeError("Price must be a number"),
+    selling_price:yup.number().integer().typeError("Price must be a number"),
     quantity: yup.number().integer().typeError("Quantity must be a number"),
   });
 
@@ -70,6 +75,7 @@ export const EditProductForm = (props) => {
   const handleSubmit = (values) => {
     const product = {
       ...values,
+      selling_price:Number(values.selling_price),
       price: Number(values.price),
       quantity: Number(values.quantity),
     };
@@ -151,6 +157,9 @@ export const EditProductForm = (props) => {
 
                     <Grid item xs={12}>
                       <CustomTextField name="price" label="Cost Price" />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <CustomTextField name="selling_price" label="Selling Price" />
                     </Grid>
                     <Grid item xs={12}>
                       <CustomTextField name="quantity" label="Quantity" />

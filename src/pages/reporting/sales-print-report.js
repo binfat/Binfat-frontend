@@ -22,8 +22,8 @@ const SalesPrintReport = (props) => {
   const { salesReport } = state;
   const printRef = useRef();
   const { router } = props;
-const startDate = new Date(router?.query?.from.replace(/["]+/g, ''))
-const endDate = new Date (router?.query?.to.replace(/["]+/g, ''))
+const startDate = new Date(router?.query?.from?.replace(/["]+/g, ''))
+const endDate = new Date (router?.query?.to?.replace(/["]+/g, ''))
 
 function convert(date) {
   var date = new Date(date),

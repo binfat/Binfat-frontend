@@ -1,5 +1,5 @@
-export const COMPANY_NAME = "Solace Medicare hospital.";
-export const COMPANY_EMAIL = "Solacehospital22@gmail.com";
-export const COMPANY_ADDRESS = "Adeoye Estate, Gbalefefe Modakeke, Osun State.";
-export const COMPANY_PHONE = "08093960909, 08093960912";
-export const COMPANY_INITIALS = "SOC";
+export const COMPANY_NAME = "Binfat Computer Technology";
+export const COMPANY_EMAIL = "binfatstocksoftware@gmail.com";
+export const COMPANY_ADDRESS = "Union Bank Ikirun Osun State.";
+export const COMPANY_PHONE = " +234-70-604-67430";
+export const COMPANY_INITIALS = "BIN";
